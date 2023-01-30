@@ -1,0 +1,56 @@
+作者：天津云
+链接：https://www.zhihu.com/question/525634331/answer/2425742479
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+  .container
+  {
+    display: flex;
+    justify-content: space-around;
+    width:300px;
+    height:55px;
+    border:solid 1px red;
+  }
+  /* 将.remove动态加入到要删除的元素上*/
+  .remove
+  {
+    flex:0 !important;
+  }
+  
+  .remove .sub {
+  	display:none;
+  }
+
+
+  .sub-container {
+    flex:1;
+    height: 52px;
+    justify-content:space-around;
+    display: flex;
+    transition:flex 2s;
+    overflow:hidden;
+  }
+
+  .sub {
+    width:50px;
+    height:50px;
+    border:solid 1px green;
+  }
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="sub-container">
+      <div class="sub">实际元素1</div>
+    </div>
+    <div class="sub-container">
+      <div class="sub">实际元素2</div>
+    </div>
+  </div>
+</body>
+</html>
